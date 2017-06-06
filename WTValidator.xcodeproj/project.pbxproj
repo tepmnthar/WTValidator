@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF0CE7E71EE56ECA00A8663A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE7E61EE56ECA00A8663A /* main.m */; };
+		AF0CE7EA1EE56ECA00A8663A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE7E91EE56ECA00A8663A /* AppDelegate.m */; };
+		AF0CE7ED1EE56ECA00A8663A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE7EC1EE56ECA00A8663A /* ViewController.m */; };
+		AF0CE7F01EE56ECA00A8663A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0CE7EE1EE56ECA00A8663A /* Main.storyboard */; };
+		AF0CE7F21EE56ECA00A8663A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0CE7F11EE56ECA00A8663A /* Assets.xcassets */; };
+		AF0CE7F51EE56ECA00A8663A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0CE7F31EE56ECA00A8663A /* LaunchScreen.storyboard */; };
+		AF0CE8001EE56ECA00A8663A /* WTValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE7FF1EE56ECA00A8663A /* WTValidatorTests.m */; };
+		AF0CE80B1EE56ECA00A8663A /* WTValidatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE80A1EE56ECA00A8663A /* WTValidatorUITests.m */; };
+		AF0CE81B1EE571C600A8663A /* WTValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE81A1EE571C600A8663A /* WTValidator.m */; };
+		AF0CE81E1EE571FF00A8663A /* WTValidatorRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE81D1EE571FF00A8663A /* WTValidatorRule.m */; };
+		AF0CE8211EE5720C00A8663A /* WTValidatorPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE8201EE5720C00A8663A /* WTValidatorPattern.m */; };
+		AF0CE8241EE5723100A8663A /* WTValidatorCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE8231EE5723100A8663A /* WTValidatorCenter.m */; };
+		AF0CE8291EE578D900A8663A /* WTValidatorRuleRequired.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE8281EE578D900A8663A /* WTValidatorRuleRequired.m */; };
+		AF0CE82E1EE650EE00A8663A /* WTValidatorRuleLength.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE82D1EE650EE00A8663A /* WTValidatorRuleLength.m */; };
+		AF0CE8311EE6575C00A8663A /* WTValidatorRuleCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CE8301EE6575C00A8663A /* WTValidatorRuleCondition.m */; };
+		AF31DE871EE65B3100AFFCF5 /* WTValidatorRulePattern.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DE861EE65B3100AFFCF5 /* WTValidatorRulePattern.m */; };
+		AF31DE8A1EE65D4400AFFCF5 /* WTValidatorPatternEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DE891EE65D4400AFFCF5 /* WTValidatorPatternEmail.m */; };
+		AF31DE8D1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DE8C1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.m */; };
+		AF31DE901EE65DE800AFFCF5 /* WTValidatorPatternPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DE8F1EE65DE800AFFCF5 /* WTValidatorPatternPassword.m */; };
+		AF31DE931EE65E3C00AFFCF5 /* WTValidatorPatternExcludeSpecialCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DE921EE65E3C00AFFCF5 /* WTValidatorPatternExcludeSpecialCharacter.m */; };
+		AF31DE961EE67D0000AFFCF5 /* WTValidatorRuleCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DE951EE67D0000AFFCF5 /* WTValidatorRuleCompare.m */; };
+		AF31DEA91EE697FC00AFFCF5 /* UISlider+WTValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DEA41EE697FC00AFFCF5 /* UISlider+WTValidator.m */; };
+		AF31DEAA1EE697FC00AFFCF5 /* UITextField+WTValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DEA61EE697FC00AFFCF5 /* UITextField+WTValidator.m */; };
+		AF31DEAB1EE697FC00AFFCF5 /* UITextView+WTValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DEA81EE697FC00AFFCF5 /* UITextView+WTValidator.m */; };
+		AF31DEB11EE6B3E000AFFCF5 /* ExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF31DEAF1EE6B3E000AFFCF5 /* ExampleTableViewCell.m */; };
+		AFD42C681EE79E0900A99B4D /* SliderExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD42C671EE79E0900A99B4D /* SliderExampleTableViewCell.m */; };
+		AFD42C6B1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD42C6A1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m */; };
+		AFD42C6E1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD42C6D1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF0CE7FC1EE56ECA00A8663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0CE7DA1EE56ECA00A8663A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0CE7E11EE56ECA00A8663A;
+			remoteInfo = WTValidator;
+		};
+		AF0CE8071EE56ECA00A8663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0CE7DA1EE56ECA00A8663A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0CE7E11EE56ECA00A8663A;
+			remoteInfo = WTValidator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF0CE7E21EE56ECA00A8663A /* WTValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0CE7E61EE56ECA00A8663A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF0CE7E81EE56ECA00A8663A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF0CE7E91EE56ECA00A8663A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF0CE7EB1EE56ECA00A8663A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF0CE7EC1EE56ECA00A8663A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF0CE7EF1EE56ECA00A8663A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF0CE7F11EE56ECA00A8663A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF0CE7F41EE56ECA00A8663A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF0CE7F61EE56ECA00A8663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0CE7FB1EE56ECA00A8663A /* WTValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0CE7FF1EE56ECA00A8663A /* WTValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTValidatorTests.m; sourceTree = "<group>"; };
+		AF0CE8011EE56ECA00A8663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0CE8061EE56ECA00A8663A /* WTValidatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTValidatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0CE80A1EE56ECA00A8663A /* WTValidatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTValidatorUITests.m; sourceTree = "<group>"; };
+		AF0CE80C1EE56ECA00A8663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0CE8191EE571C600A8663A /* WTValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidator.h; sourceTree = "<group>"; };
+		AF0CE81A1EE571C600A8663A /* WTValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidator.m; sourceTree = "<group>"; };
+		AF0CE81C1EE571FF00A8663A /* WTValidatorRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorRule.h; sourceTree = "<group>"; };
+		AF0CE81D1EE571FF00A8663A /* WTValidatorRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorRule.m; sourceTree = "<group>"; };
+		AF0CE81F1EE5720C00A8663A /* WTValidatorPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorPattern.h; sourceTree = "<group>"; };
+		AF0CE8201EE5720C00A8663A /* WTValidatorPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorPattern.m; sourceTree = "<group>"; };
+		AF0CE8221EE5723100A8663A /* WTValidatorCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorCenter.h; sourceTree = "<group>"; };
+		AF0CE8231EE5723100A8663A /* WTValidatorCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorCenter.m; sourceTree = "<group>"; };
+		AF0CE8271EE578D900A8663A /* WTValidatorRuleRequired.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorRuleRequired.h; sourceTree = "<group>"; };
+		AF0CE8281EE578D900A8663A /* WTValidatorRuleRequired.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorRuleRequired.m; sourceTree = "<group>"; };
+		AF0CE82B1EE5798D00A8663A /* WTValidatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTValidatable.h; sourceTree = "<group>"; };
+		AF0CE82C1EE650EE00A8663A /* WTValidatorRuleLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorRuleLength.h; sourceTree = "<group>"; };
+		AF0CE82D1EE650EE00A8663A /* WTValidatorRuleLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorRuleLength.m; sourceTree = "<group>"; };
+		AF0CE82F1EE6575C00A8663A /* WTValidatorRuleCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorRuleCondition.h; sourceTree = "<group>"; };
+		AF0CE8301EE6575C00A8663A /* WTValidatorRuleCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorRuleCondition.m; sourceTree = "<group>"; };
+		AF31DE851EE65B3100AFFCF5 /* WTValidatorRulePattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorRulePattern.h; sourceTree = "<group>"; };
+		AF31DE861EE65B3100AFFCF5 /* WTValidatorRulePattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorRulePattern.m; sourceTree = "<group>"; };
+		AF31DE881EE65D4400AFFCF5 /* WTValidatorPatternEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorPatternEmail.h; sourceTree = "<group>"; };
+		AF31DE891EE65D4400AFFCF5 /* WTValidatorPatternEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorPatternEmail.m; sourceTree = "<group>"; };
+		AF31DE8B1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorPatternNumeric.h; sourceTree = "<group>"; };
+		AF31DE8C1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorPatternNumeric.m; sourceTree = "<group>"; };
+		AF31DE8E1EE65DE800AFFCF5 /* WTValidatorPatternPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorPatternPassword.h; sourceTree = "<group>"; };
+		AF31DE8F1EE65DE800AFFCF5 /* WTValidatorPatternPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorPatternPassword.m; sourceTree = "<group>"; };
+		AF31DE911EE65E3C00AFFCF5 /* WTValidatorPatternExcludeSpecialCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorPatternExcludeSpecialCharacter.h; sourceTree = "<group>"; };
+		AF31DE921EE65E3C00AFFCF5 /* WTValidatorPatternExcludeSpecialCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorPatternExcludeSpecialCharacter.m; sourceTree = "<group>"; };
+		AF31DE941EE67D0000AFFCF5 /* WTValidatorRuleCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTValidatorRuleCompare.h; sourceTree = "<group>"; };
+		AF31DE951EE67D0000AFFCF5 /* WTValidatorRuleCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTValidatorRuleCompare.m; sourceTree = "<group>"; };
+		AF31DEA31EE697FC00AFFCF5 /* UISlider+WTValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+WTValidator.h"; sourceTree = "<group>"; };
+		AF31DEA41EE697FC00AFFCF5 /* UISlider+WTValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+WTValidator.m"; sourceTree = "<group>"; };
+		AF31DEA51EE697FC00AFFCF5 /* UITextField+WTValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WTValidator.h"; sourceTree = "<group>"; };
+		AF31DEA61EE697FC00AFFCF5 /* UITextField+WTValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WTValidator.m"; sourceTree = "<group>"; };
+		AF31DEA71EE697FC00AFFCF5 /* UITextView+WTValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+WTValidator.h"; sourceTree = "<group>"; };
+		AF31DEA81EE697FC00AFFCF5 /* UITextView+WTValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+WTValidator.m"; sourceTree = "<group>"; };
+		AF31DEAC1EE6980F00AFFCF5 /* UIKit+WTValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit+WTValidator.h"; sourceTree = "<group>"; };
+		AF31DEAE1EE6B3E000AFFCF5 /* ExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewCell.h; sourceTree = "<group>"; };
+		AF31DEAF1EE6B3E000AFFCF5 /* ExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewCell.m; sourceTree = "<group>"; };
+		AFD42C661EE79E0900A99B4D /* SliderExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderExampleTableViewCell.h; sourceTree = "<group>"; };
+		AFD42C671EE79E0900A99B4D /* SliderExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderExampleTableViewCell.m; sourceTree = "<group>"; };
+		AFD42C691EE7A0AF00A99B4D /* TextViewExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewExampleTableViewCell.h; sourceTree = "<group>"; };
+		AFD42C6A1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewExampleTableViewCell.m; sourceTree = "<group>"; };
+		AFD42C6C1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldExampleTableViewCell.h; sourceTree = "<group>"; };
+		AFD42C6D1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldExampleTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF0CE7DF1EE56ECA00A8663A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0CE7F81EE56ECA00A8663A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0CE8031EE56ECA00A8663A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF0CE7D91EE56ECA00A8663A = {
+			isa = PBXGroup;
+			children = (
+				AF0CE7E41EE56ECA00A8663A /* WTValidator */,
+				AF0CE7FE1EE56ECA00A8663A /* WTValidatorTests */,
+				AF0CE8091EE56ECA00A8663A /* WTValidatorUITests */,
+				AF0CE7E31EE56ECA00A8663A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF0CE7E31EE56ECA00A8663A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF0CE7E21EE56ECA00A8663A /* WTValidator.app */,
+				AF0CE7FB1EE56ECA00A8663A /* WTValidatorTests.xctest */,
+				AF0CE8061EE56ECA00A8663A /* WTValidatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF0CE7E41EE56ECA00A8663A /* WTValidator */ = {
+			isa = PBXGroup;
+			children = (
+				AF31DEAD1EE6B39B00AFFCF5 /* views */,
+				AF0CE8181EE56F2600A8663A /* WTValidator */,
+				AF0CE7E81EE56ECA00A8663A /* AppDelegate.h */,
+				AF0CE7E91EE56ECA00A8663A /* AppDelegate.m */,
+				AF0CE7EB1EE56ECA00A8663A /* ViewController.h */,
+				AF0CE7EC1EE56ECA00A8663A /* ViewController.m */,
+				AF0CE7EE1EE56ECA00A8663A /* Main.storyboard */,
+				AF0CE7F11EE56ECA00A8663A /* Assets.xcassets */,
+				AF0CE7F31EE56ECA00A8663A /* LaunchScreen.storyboard */,
+				AF0CE7F61EE56ECA00A8663A /* Info.plist */,
+				AF0CE7E51EE56ECA00A8663A /* Supporting Files */,
+			);
+			path = WTValidator;
+			sourceTree = "<group>";
+		};
+		AF0CE7E51EE56ECA00A8663A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF0CE7E61EE56ECA00A8663A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF0CE7FE1EE56ECA00A8663A /* WTValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF0CE7FF1EE56ECA00A8663A /* WTValidatorTests.m */,
+				AF0CE8011EE56ECA00A8663A /* Info.plist */,
+			);
+			path = WTValidatorTests;
+			sourceTree = "<group>";
+		};
+		AF0CE8091EE56ECA00A8663A /* WTValidatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF0CE80A1EE56ECA00A8663A /* WTValidatorUITests.m */,
+				AF0CE80C1EE56ECA00A8663A /* Info.plist */,
+			);
+			path = WTValidatorUITests;
+			sourceTree = "<group>";
+		};
+		AF0CE8181EE56F2600A8663A /* WTValidator */ = {
+			isa = PBXGroup;
+			children = (
+				AF31DEA21EE697FC00AFFCF5 /* UIKit+WTValidator */,
+				AF0CE8261EE5755300A8663A /* Patterns */,
+				AF0CE8251EE5754B00A8663A /* Rules */,
+				AF0CE8191EE571C600A8663A /* WTValidator.h */,
+				AF0CE81A1EE571C600A8663A /* WTValidator.m */,
+				AF0CE81C1EE571FF00A8663A /* WTValidatorRule.h */,
+				AF0CE81D1EE571FF00A8663A /* WTValidatorRule.m */,
+				AF0CE81F1EE5720C00A8663A /* WTValidatorPattern.h */,
+				AF0CE8201EE5720C00A8663A /* WTValidatorPattern.m */,
+				AF0CE8221EE5723100A8663A /* WTValidatorCenter.h */,
+				AF0CE8231EE5723100A8663A /* WTValidatorCenter.m */,
+				AF0CE82B1EE5798D00A8663A /* WTValidatable.h */,
+			);
+			path = WTValidator;
+			sourceTree = "<group>";
+		};
+		AF0CE8251EE5754B00A8663A /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				AF0CE8271EE578D900A8663A /* WTValidatorRuleRequired.h */,
+				AF0CE8281EE578D900A8663A /* WTValidatorRuleRequired.m */,
+				AF0CE82C1EE650EE00A8663A /* WTValidatorRuleLength.h */,
+				AF0CE82D1EE650EE00A8663A /* WTValidatorRuleLength.m */,
+				AF0CE82F1EE6575C00A8663A /* WTValidatorRuleCondition.h */,
+				AF0CE8301EE6575C00A8663A /* WTValidatorRuleCondition.m */,
+				AF31DE851EE65B3100AFFCF5 /* WTValidatorRulePattern.h */,
+				AF31DE861EE65B3100AFFCF5 /* WTValidatorRulePattern.m */,
+				AF31DE941EE67D0000AFFCF5 /* WTValidatorRuleCompare.h */,
+				AF31DE951EE67D0000AFFCF5 /* WTValidatorRuleCompare.m */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		AF0CE8261EE5755300A8663A /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				AF31DE881EE65D4400AFFCF5 /* WTValidatorPatternEmail.h */,
+				AF31DE891EE65D4400AFFCF5 /* WTValidatorPatternEmail.m */,
+				AF31DE8B1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.h */,
+				AF31DE8C1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.m */,
+				AF31DE8E1EE65DE800AFFCF5 /* WTValidatorPatternPassword.h */,
+				AF31DE8F1EE65DE800AFFCF5 /* WTValidatorPatternPassword.m */,
+				AF31DE911EE65E3C00AFFCF5 /* WTValidatorPatternExcludeSpecialCharacter.h */,
+				AF31DE921EE65E3C00AFFCF5 /* WTValidatorPatternExcludeSpecialCharacter.m */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		AF31DEA21EE697FC00AFFCF5 /* UIKit+WTValidator */ = {
+			isa = PBXGroup;
+			children = (
+				AF31DEA31EE697FC00AFFCF5 /* UISlider+WTValidator.h */,
+				AF31DEA41EE697FC00AFFCF5 /* UISlider+WTValidator.m */,
+				AF31DEA51EE697FC00AFFCF5 /* UITextField+WTValidator.h */,
+				AF31DEA61EE697FC00AFFCF5 /* UITextField+WTValidator.m */,
+				AF31DEA71EE697FC00AFFCF5 /* UITextView+WTValidator.h */,
+				AF31DEA81EE697FC00AFFCF5 /* UITextView+WTValidator.m */,
+				AF31DEAC1EE6980F00AFFCF5 /* UIKit+WTValidator.h */,
+			);
+			path = "UIKit+WTValidator";
+			sourceTree = "<group>";
+		};
+		AF31DEAD1EE6B39B00AFFCF5 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AF31DEAE1EE6B3E000AFFCF5 /* ExampleTableViewCell.h */,
+				AF31DEAF1EE6B3E000AFFCF5 /* ExampleTableViewCell.m */,
+				AFD42C661EE79E0900A99B4D /* SliderExampleTableViewCell.h */,
+				AFD42C671EE79E0900A99B4D /* SliderExampleTableViewCell.m */,
+				AFD42C691EE7A0AF00A99B4D /* TextViewExampleTableViewCell.h */,
+				AFD42C6A1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m */,
+				AFD42C6C1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.h */,
+				AFD42C6D1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF0CE7E11EE56ECA00A8663A /* WTValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0CE80F1EE56ECA00A8663A /* Build configuration list for PBXNativeTarget "WTValidator" */;
+			buildPhases = (
+				AF0CE7DE1EE56ECA00A8663A /* Sources */,
+				AF0CE7DF1EE56ECA00A8663A /* Frameworks */,
+				AF0CE7E01EE56ECA00A8663A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTValidator;
+			productName = WTValidator;
+			productReference = AF0CE7E21EE56ECA00A8663A /* WTValidator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF0CE7FA1EE56ECA00A8663A /* WTValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0CE8121EE56ECA00A8663A /* Build configuration list for PBXNativeTarget "WTValidatorTests" */;
+			buildPhases = (
+				AF0CE7F71EE56ECA00A8663A /* Sources */,
+				AF0CE7F81EE56ECA00A8663A /* Frameworks */,
+				AF0CE7F91EE56ECA00A8663A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF0CE7FD1EE56ECA00A8663A /* PBXTargetDependency */,
+			);
+			name = WTValidatorTests;
+			productName = WTValidatorTests;
+			productReference = AF0CE7FB1EE56ECA00A8663A /* WTValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF0CE8051EE56ECA00A8663A /* WTValidatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0CE8151EE56ECA00A8663A /* Build configuration list for PBXNativeTarget "WTValidatorUITests" */;
+			buildPhases = (
+				AF0CE8021EE56ECA00A8663A /* Sources */,
+				AF0CE8031EE56ECA00A8663A /* Frameworks */,
+				AF0CE8041EE56ECA00A8663A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF0CE8081EE56ECA00A8663A /* PBXTargetDependency */,
+			);
+			name = WTValidatorUITests;
+			productName = WTValidatorUITests;
+			productReference = AF0CE8061EE56ECA00A8663A /* WTValidatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF0CE7DA1EE56ECA00A8663A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tepmnthar;
+				TargetAttributes = {
+					AF0CE7E11EE56ECA00A8663A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 662J8SU7P8;
+						ProvisioningStyle = Automatic;
+					};
+					AF0CE7FA1EE56ECA00A8663A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 662J8SU7P8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF0CE7E11EE56ECA00A8663A;
+					};
+					AF0CE8051EE56ECA00A8663A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 662J8SU7P8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF0CE7E11EE56ECA00A8663A;
+					};
+				};
+			};
+			buildConfigurationList = AF0CE7DD1EE56ECA00A8663A /* Build configuration list for PBXProject "WTValidator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF0CE7D91EE56ECA00A8663A;
+			productRefGroup = AF0CE7E31EE56ECA00A8663A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF0CE7E11EE56ECA00A8663A /* WTValidator */,
+				AF0CE7FA1EE56ECA00A8663A /* WTValidatorTests */,
+				AF0CE8051EE56ECA00A8663A /* WTValidatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF0CE7E01EE56ECA00A8663A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0CE7F51EE56ECA00A8663A /* LaunchScreen.storyboard in Resources */,
+				AF0CE7F21EE56ECA00A8663A /* Assets.xcassets in Resources */,
+				AF0CE7F01EE56ECA00A8663A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0CE7F91EE56ECA00A8663A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0CE8041EE56ECA00A8663A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF0CE7DE1EE56ECA00A8663A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF31DEB11EE6B3E000AFFCF5 /* ExampleTableViewCell.m in Sources */,
+				AF0CE82E1EE650EE00A8663A /* WTValidatorRuleLength.m in Sources */,
+				AF31DE8D1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.m in Sources */,
+				AF0CE7ED1EE56ECA00A8663A /* ViewController.m in Sources */,
+				AFD42C6E1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m in Sources */,
+				AF0CE81E1EE571FF00A8663A /* WTValidatorRule.m in Sources */,
+				AF31DE8A1EE65D4400AFFCF5 /* WTValidatorPatternEmail.m in Sources */,
+				AF0CE81B1EE571C600A8663A /* WTValidator.m in Sources */,
+				AF0CE8241EE5723100A8663A /* WTValidatorCenter.m in Sources */,
+				AF31DE901EE65DE800AFFCF5 /* WTValidatorPatternPassword.m in Sources */,
+				AF31DEAB1EE697FC00AFFCF5 /* UITextView+WTValidator.m in Sources */,
+				AF0CE8311EE6575C00A8663A /* WTValidatorRuleCondition.m in Sources */,
+				AF0CE7EA1EE56ECA00A8663A /* AppDelegate.m in Sources */,
+				AF0CE8211EE5720C00A8663A /* WTValidatorPattern.m in Sources */,
+				AF31DEAA1EE697FC00AFFCF5 /* UITextField+WTValidator.m in Sources */,
+				AF0CE8291EE578D900A8663A /* WTValidatorRuleRequired.m in Sources */,
+				AF31DE961EE67D0000AFFCF5 /* WTValidatorRuleCompare.m in Sources */,
+				AF31DEA91EE697FC00AFFCF5 /* UISlider+WTValidator.m in Sources */,
+				AF31DE931EE65E3C00AFFCF5 /* WTValidatorPatternExcludeSpecialCharacter.m in Sources */,
+				AFD42C6B1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m in Sources */,
+				AF31DE871EE65B3100AFFCF5 /* WTValidatorRulePattern.m in Sources */,
+				AF0CE7E71EE56ECA00A8663A /* main.m in Sources */,
+				AFD42C681EE79E0900A99B4D /* SliderExampleTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0CE7F71EE56ECA00A8663A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0CE8001EE56ECA00A8663A /* WTValidatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0CE8021EE56ECA00A8663A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0CE80B1EE56ECA00A8663A /* WTValidatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF0CE7FD1EE56ECA00A8663A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF0CE7E11EE56ECA00A8663A /* WTValidator */;
+			targetProxy = AF0CE7FC1EE56ECA00A8663A /* PBXContainerItemProxy */;
+		};
+		AF0CE8081EE56ECA00A8663A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF0CE7E11EE56ECA00A8663A /* WTValidator */;
+			targetProxy = AF0CE8071EE56ECA00A8663A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF0CE7EE1EE56ECA00A8663A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF0CE7EF1EE56ECA00A8663A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF0CE7F31EE56ECA00A8663A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF0CE7F41EE56ECA00A8663A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF0CE80D1EE56ECA00A8663A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF0CE80E1EE56ECA00A8663A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF0CE8101EE56ECA00A8663A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 662J8SU7P8;
+				INFOPLIST_FILE = WTValidator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF0CE8111EE56ECA00A8663A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 662J8SU7P8;
+				INFOPLIST_FILE = WTValidator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF0CE8131EE56ECA00A8663A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 662J8SU7P8;
+				INFOPLIST_FILE = WTValidatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTValidator.app/WTValidator";
+			};
+			name = Debug;
+		};
+		AF0CE8141EE56ECA00A8663A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 662J8SU7P8;
+				INFOPLIST_FILE = WTValidatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTValidator.app/WTValidator";
+			};
+			name = Release;
+		};
+		AF0CE8161EE56ECA00A8663A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 662J8SU7P8;
+				INFOPLIST_FILE = WTValidatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WTValidator;
+			};
+			name = Debug;
+		};
+		AF0CE8171EE56ECA00A8663A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 662J8SU7P8;
+				INFOPLIST_FILE = WTValidatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WTValidator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF0CE7DD1EE56ECA00A8663A /* Build configuration list for PBXProject "WTValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0CE80D1EE56ECA00A8663A /* Debug */,
+				AF0CE80E1EE56ECA00A8663A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0CE80F1EE56ECA00A8663A /* Build configuration list for PBXNativeTarget "WTValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0CE8101EE56ECA00A8663A /* Debug */,
+				AF0CE8111EE56ECA00A8663A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0CE8121EE56ECA00A8663A /* Build configuration list for PBXNativeTarget "WTValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0CE8131EE56ECA00A8663A /* Debug */,
+				AF0CE8141EE56ECA00A8663A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0CE8151EE56ECA00A8663A /* Build configuration list for PBXNativeTarget "WTValidatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0CE8161EE56ECA00A8663A /* Debug */,
+				AF0CE8171EE56ECA00A8663A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF0CE7DA1EE56ECA00A8663A /* Project object */;
+}
