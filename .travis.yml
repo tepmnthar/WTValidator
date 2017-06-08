@@ -1,2 +1,2 @@
 language: objective-c
-script: xctool test -project WTValidator.xcodeproj -scheme WTValidator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.3'
+script: xctool test -project WTValidator.xcodeproj -scheme WTValidator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.0'
