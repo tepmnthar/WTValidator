@@ -1,3 +1,2 @@
 language: objective-c
-xcode_project: WTValidator.xcodeproj # path to your xcodeproj folder
-xcode_scheme: WTValidator
+script: xctool test -project WTValidator.xcodeproj -scheme WTValidator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.3'
