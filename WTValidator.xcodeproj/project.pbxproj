@@ -359,7 +359,6 @@
 				TargetAttributes = {
 					AF0CE7E11EE56ECA00A8663A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 662J8SU7P8;
 						ProvisioningStyle = Automatic;
 					};
 					AF0CE7FA1EE56ECA00A8663A = {
@@ -601,7 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 662J8SU7P8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WTValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidator;
@@ -613,7 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 662J8SU7P8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WTValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tepmnthar.WTValidator;
