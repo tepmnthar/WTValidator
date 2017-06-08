@@ -22,8 +22,14 @@
 #import "UISlider+WTValidator.h"
 #import "UITextField+WTValidator.h"
 #import "UITextView+WTValidator.h"
+#import "WTValidatorCenter.h"
 
 @interface WTValidator : NSObject
+
+/**
+ set by WTValidatorCenter
+ */
+@property (nonatomic, readonly) WTValidatorCenter* center;
 
 + (instancetype)validatorWithRule:(WTValidatorRule*)rule;
 + (instancetype)validatorWithRules:(NSArray<WTValidatorRule*>*)rules;

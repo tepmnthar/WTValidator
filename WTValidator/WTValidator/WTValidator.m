@@ -12,6 +12,7 @@
 @interface WTValidator ()
 
 @property (nonatomic) NSMutableArray<WTValidatorRule*>* rules;
+@property (nonatomic, readwrite) WTValidatorCenter* center;
 
 @end
 
@@ -50,6 +51,10 @@
             *stop = YES;
         }
     }];
+    if (self.center) {
+        WTValidatorStatus status = WTValidatorStatusConverter(flag);
+        [self.center validateComplete:self status:status];
+    }
     return flag;
 }
 

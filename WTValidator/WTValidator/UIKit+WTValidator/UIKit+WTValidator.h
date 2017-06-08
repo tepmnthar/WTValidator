@@ -9,16 +9,9 @@
 #ifndef UIKit_WTValidator_h
 #define UIKit_WTValidator_h
 
-@class WTValidator;
+#import "WTValidatable.h"
 
-typedef NS_ENUM(NSUInteger, WTValidatorStatus) {
-    WTValidatorStatusUncheck,
-    WTValidatorStatusPass,
-    WTValidatorStatusFail,
-};
-static inline WTValidatorStatus WTValidatorStatusConverter(BOOL valid) {
-    return valid ? WTValidatorStatusPass : WTValidatorStatusFail;
-}
+@class WTValidator;
 
 typedef void (^WTValidatorHandler)(WTValidatorStatus status);
 

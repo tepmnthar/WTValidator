@@ -29,6 +29,17 @@
     
     return self.condition(input);
 }
-
+//- (NSUInteger)hash {
+//    return [self.class hash] ^ [self.condition hash];
+//}
+//- (BOOL)isEqual:(id)object {
+//    if (self == object) {
+//        return YES;
+//    }
+//    if ([self class] == [object class] && self.condition == ((WTValidatorRuleCondition*)object).condition) {
+//        return YES;
+//    }
+//    return NO;
+//}
 
 @end

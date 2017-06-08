@@ -62,4 +62,19 @@
     return ![@[[NSObject class], [NSProxy class]] containsObject:commonSuperClass];
 }
 
+//- (NSUInteger)hash {
+//    NSUInteger hashMatches = self.matches ? 2003 : 2011;
+//    return [self.class hash] ^ [self.comparable hash] ^ self.order ^ hashMatches;
+//}
+//- (BOOL)isEqual:(id)object {
+//    if (self == object) {
+//        return YES;
+//    }
+//    if ([self class] == [object class] && self.comparable == ((WTValidatorRuleCompare*)object).comparable && self.order == ((WTValidatorRuleCompare*)object).order && self.matches == ((WTValidatorRuleCompare*)object).matches) {
+//        return YES;
+//    }
+//    return NO;
+//}
+
+
 @end

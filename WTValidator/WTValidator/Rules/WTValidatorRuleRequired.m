@@ -23,4 +23,17 @@
     return !!input;
 }
 
+//- (NSUInteger)hash {
+//    return [self.class hash];
+//}
+//- (BOOL)isEqual:(id)object {
+//    if (self == object) {
+//        return YES;
+//    }
+//    if ([self class] == [object class]) {
+//        return YES;
+//    }
+//    return NO;
+//}
+
 @end

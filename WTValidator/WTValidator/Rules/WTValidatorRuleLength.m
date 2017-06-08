@@ -51,5 +51,17 @@
     BOOL valid = self.min <= length && length <= self.max;
     return valid;
 }
+//- (NSUInteger)hash {
+//    return [self.class hash] ^ self.min ^ self.max;
+//}
+//- (BOOL)isEqual:(id)object {
+//    if (self == object) {
+//        return YES;
+//    }
+//    if ([self class] == [object class] && self.min == ((WTValidatorRuleLength*)object).min && self.max == ((WTValidatorRuleLength*)object).max) {
+//        return YES;
+//    }
+//    return NO;
+//}
 
 @end

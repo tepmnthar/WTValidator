@@ -35,6 +35,8 @@
 		AFD42C681EE79E0900A99B4D /* SliderExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD42C671EE79E0900A99B4D /* SliderExampleTableViewCell.m */; };
 		AFD42C6B1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD42C6A1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m */; };
 		AFD42C6E1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD42C6D1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m */; };
+		AFE889881EE9378D00B9482B /* GroupExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE889871EE9378D00B9482B /* GroupExampleTableViewCell.m */; };
+		AFF5A2801EE92AAA00FB34C9 /* WTValidatorCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF5A27F1EE92AAA00FB34C9 /* WTValidatorCenterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,9 @@
 		AFD42C6A1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewExampleTableViewCell.m; sourceTree = "<group>"; };
 		AFD42C6C1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldExampleTableViewCell.h; sourceTree = "<group>"; };
 		AFD42C6D1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldExampleTableViewCell.m; sourceTree = "<group>"; };
+		AFE889861EE9378D00B9482B /* GroupExampleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupExampleTableViewCell.h; sourceTree = "<group>"; };
+		AFE889871EE9378D00B9482B /* GroupExampleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupExampleTableViewCell.m; sourceTree = "<group>"; };
+		AFF5A27F1EE92AAA00FB34C9 /* WTValidatorCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTValidatorCenterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +194,7 @@
 		AF0CE7FE1EE56ECA00A8663A /* WTValidatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				AFF5A27F1EE92AAA00FB34C9 /* WTValidatorCenterTests.m */,
 				AF0CE7FF1EE56ECA00A8663A /* WTValidatorTests.m */,
 				AF0CE8011EE56ECA00A8663A /* Info.plist */,
 			);
@@ -280,6 +286,8 @@
 				AFD42C6A1EE7A0AF00A99B4D /* TextViewExampleTableViewCell.m */,
 				AFD42C6C1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.h */,
 				AFD42C6D1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m */,
+				AFE889861EE9378D00B9482B /* GroupExampleTableViewCell.h */,
+				AFE889871EE9378D00B9482B /* GroupExampleTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -422,6 +430,7 @@
 			files = (
 				AF31DEB11EE6B3E000AFFCF5 /* ExampleTableViewCell.m in Sources */,
 				AF0CE82E1EE650EE00A8663A /* WTValidatorRuleLength.m in Sources */,
+				AFE889881EE9378D00B9482B /* GroupExampleTableViewCell.m in Sources */,
 				AF31DE8D1EE65D6900AFFCF5 /* WTValidatorPatternNumeric.m in Sources */,
 				AF0CE7ED1EE56ECA00A8663A /* ViewController.m in Sources */,
 				AFD42C6E1EE7A0E600A99B4D /* TextFieldExampleTableViewCell.m in Sources */,
@@ -450,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF5A2801EE92AAA00FB34C9 /* WTValidatorCenterTests.m in Sources */,
 				AF0CE8001EE56ECA00A8663A /* WTValidatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

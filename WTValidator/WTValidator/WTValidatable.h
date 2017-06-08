@@ -15,5 +15,12 @@ typedef NS_ENUM(NSUInteger, WTValidatableType) {
     WTValidatableTypeString,
     WTValidatableTypeComparable,
 };
-
+typedef NS_ENUM(NSUInteger, WTValidatorStatus) {
+    WTValidatorStatusUncheck,
+    WTValidatorStatusPass,
+    WTValidatorStatusFail,
+};
+static inline WTValidatorStatus WTValidatorStatusConverter(BOOL valid) {
+    return valid ? WTValidatorStatusPass : WTValidatorStatusFail;
+}
 #endif /* WTValidatable_h */

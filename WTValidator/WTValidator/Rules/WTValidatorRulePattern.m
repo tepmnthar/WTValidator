@@ -29,5 +29,17 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", self.pattern];
     return [predicate evaluateWithObject: (NSString*)input];
 }
+//- (NSUInteger)hash {
+//    return [self.class hash] ^ [self.pattern hash];
+//}
+//-(BOOL)isEqual:(id)object {
+//    if (self == object) {
+//        return YES;
+//    }
+//    if ([self class] == [object class] && self.pattern == ((WTValidatorRulePattern*)object).pattern) {
+//        return YES;
+//    }
+//    return NO;
+//}
 
 @end
