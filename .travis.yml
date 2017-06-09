@@ -1,2 +1,5 @@
 language: objective-c
-script: xctool test -project WTValidator.xcodeproj -scheme WTValidator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'
+script:
+  - xcrun simctl list
+  - instruments -s devices
+  - xctool test -project WTValidator.xcodeproj -scheme WTValidator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'
